@@ -15,5 +15,8 @@ CHIP Not {
     PARTS:
     // Put your code here:
         Nand(a=in, b=true, out=out);
-        // Nand(a=in, b=in, out=out); でもOK
+    
+    /* other solution
+        Nand(a=in, b=in, out=out);
+    */
 }

@@ -13,10 +13,12 @@ CHIP Not {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    // in Nand 1:
         Nand(a=in, b=true, out=out);
     
-    /* other solution
+    // other solution
+    // in Nand in
+    /*
         Nand(a=in, b=in, out=out);
     */
 }

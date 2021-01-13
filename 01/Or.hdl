@@ -14,12 +14,14 @@ CHIP Or {
     OUT out;
 
     PARTS:
-    // Put your code here:
+    // Not(a) Nand Not(b):
         Not(in=a, out=nota);
         Not(in=b, out=notb);
         Nand(a=nota, b=notb, out=out);
 
-    /* other solution
+    // other solution
+    // (a Nand a) Nand (b Nand b)
+    /*
         Nand(a=a, b=a, out=aNanda);
         Nand(a=b, b=b, out=bNandb);
         Nand(a=aNanda, b=bNandb, out=out);
